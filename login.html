@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="styles/login.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="styles/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body class="cuerpo">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="inicio-admin.html">AlertaGT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="inicio-admin.html">Inicio </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Usuarios <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cerrar Sesion</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="images/user-icon.png" alt="logo" width="100" height="140">
+    <h2>REGISTRAR NUEVO USUARIO</h2>
+  
+  </div>
+
+  <div class="row ">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="opcion">Elija una opción</span>
+       
+      </h4>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Nuevo</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Guardar</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Modificar</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Eliminar</button>
+    </div>
+
+
+    <div class="col-md-8 order-md-1">
+      
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombres</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellidos</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">ID Usuario</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">id</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your id is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Estado</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>Activo</option>
+              <option>Inactivo</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor seleccione una opción.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Correo <span class="text-muted"></span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Dirección</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your address.
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="country">Municipio</label>
+          <select class="custom-select d-block w-100" id="country" required>
+            <option value="">Elegir...</option>
+            <option>Sololá</option>
+            <option>Panajachel</option>
+            <option>San Andrés Semetabaj</option>
+            <option>San Lucas Tolimán</option>
+            <option>Santiago Atitlán</option>
+
+          </select>
+          <div class="invalid-feedback">
+            Por favor ingrese su municipio.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address2">Puesto <span class="text-muted"></span></label>
+          <input type="text" class="form-control"  placeholder="ej, supervisor" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="address2">Teléfono <span class="text-muted"></span></label>
+          <input type="text" class="form-control"  placeholder="+502 12345678" required>
+        </div>
+        
+          <div  mb-3">
+            <label for="address2">Contraseña <span class="text-muted"></span></label>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          </div>
+        
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Validar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2020 TuSoft</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="javaScript/jquery.slim.min.js"><\/script>')</script><script src="javaScript/bootstrap.bundle.js"></script>
+        <script src="form-validation.js"></script></body>
+</html>

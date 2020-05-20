@@ -1,0 +1,18 @@
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed { line-height: 1.25; }
+.d-block{
+  
+  padding-top: 50px;
+  
+
+}
+.cuerpo{
+  background-color:  hsl(228, 28%, 20%);
+  color: hsl(228, 34%, 66%);
+}
+.text-muted{
+  color: hsl(228, 34%, 66%);
+}
