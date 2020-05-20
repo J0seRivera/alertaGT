@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/offcanvas/">
 
     <!-- Bootstrap core CSS -->
-<link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/bootstrap.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -31,21 +31,22 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="styles/offcanvas.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/login.css">
   </head>
-  <body class="bg-light">
+  <body class="cuerpo">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-  <a class="navbar-brand mr-auto mr-lg-0" href="#">AlertaGT</a>
-  <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+    <a class="navbar-brand " href="#">AlertaGT</a>
+    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
     <span class="navbar-toggler-icon"></span>
-  </button>
+    </button>
 
-  <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Inicio </a>
+        <a class="nav-link" href="inicio-admin.html">Inicio </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Gestion de Usuarios<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Gestión de Usuarios<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Cerrar Sesión</a>
@@ -87,9 +88,44 @@
   <div class="my-3 p-3 bg-white rounded shadow-sm">
     <h6 class="border-bottom border-gray pb-2 mb-0">Lista de Usuarios</h6>
     
-    
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombres</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">Puesto</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Dirección</th>
+          <th scope="col">Municipio</th>
+          <th scope="col">Teléfono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
     <small class="d-block text-right mt-3">
-      <a href="#">All updates</a>
+      <a href="#">Actualizar</a>
     </small>
   </div>
 
@@ -100,5 +136,6 @@
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="javaScript/jquery.slim.min.js"><\/script>')</script><script src="javaScript/bootstrap.bundle.js"></script>
-        <script src="javaScript/offcanvas.js"></script></body>
+        <script src="javaScript/offcanvas.js"></script>
+  </body>
 </html>
