@@ -47,13 +47,7 @@ table{
   position: relative;
   
 }
-.botn{
-  width: 300px;
-}
-.botones-menu{
-  position: relative;
-  
-}
+
 
 @media screen and (min-width: 500px){
   .grid{
