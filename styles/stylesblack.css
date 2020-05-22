@@ -1,0 +1,77 @@
+body {
+  
+  margin:0px;
+  
+}
+
+
+/*--------------body-----------------*/
+
+/* .cards{
+  margin-top: 25px;
+}
+.wrapper{
+  padding: 0 40px 10px 40px;
+}
+.grid{
+  display: grid;
+  row-gap: 20px;
+}
+
+.encavezado{
+  text-align: center;
+  color: hsl(163, 72%, 41%);
+  font-size: 2em;
+  font-weight: bolder;
+} */
+.contenido{
+  margin: 0%;
+  padding: 0px;
+}
+table{
+  margin:0px auto;
+  width: 90%;
+}
+.week1{
+  background: linear-gradient(0.25turn, hsl(37, 90%, 53%), hsl(329, 71%, 43%));
+  padding: 2px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.contenido{
+  margin-left: 5%;
+  width: 90%;
+}
+.encabezado{
+  position: relative;
+  
+}
+.botn{
+  width: 300px;
+}
+.botones-menu{
+  position: relative;
+  
+}
+
+@media screen and (min-width: 500px){
+  .grid{
+      grid-template-columns: 1fr;
+      column-gap: 20px;
+  }
+  .wrapper{
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 800px){
+  .grid{
+      grid-template-columns: 1fr 1fr;  
+  }
+}
+@media screen and (min-width: 1024px){
+  .grid{
+      grid-template-columns: 1fr 1fr;
+  }
+}
