@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>Gestión de Usuarios</title>
+    <title>Lista de Reportes</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/offcanvas/">
 
@@ -43,25 +43,18 @@
     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="inicio-admin.html">Inicio</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Gestión de Usuarios<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="inicio-admin.html">Inicio </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="lista_reportes.html">Reportes<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="gest-user.html">Gestión de Usuarios<span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+             <a class="nav-link" href="#">Reportes</a>
+           </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Cerrar Sesión</a>
       </li>
-      <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li> -->
+     
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -74,9 +67,11 @@
   <nav class="nav nav-underline">
     <div class="nav-link">Opciónes</div>
     <a class="nav-link active" href="#">
-      Listar usuarios
+      Listar Reportes
     </a>
-    <a class="nav-link" href="login.html">Gestionar Usuarios</a>
+    <a class="nav-link" href="nuevo_reporte.html">Generar Reportes</a>
+    <a class="nav-link" href="editar_reporte.html">Editar Reportes</a>
+    <a class="nav-link" href="buzon_reportes.html">Buzón de Reportes</a>
   </nav>
 </div>
 
@@ -84,45 +79,44 @@
   <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
     <img class="mr-3" src="images/conred-logo.png" alt="" width="48" height="48">
     <div class="lh-100">
-      <h6 class="mb-0 text-white lh-100">Gestión de Usuarios</h6>
+      <h6 class="mb-0 text-white lh-100">Reportes de Eventos</h6>
     </div>
   </div>
 
   <div class="my-3 p-3 bg-white rounded shadow-sm">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Lista de Usuarios</h6>
+    <h6 class="border-bottom border-gray pb-2 mb-0">Lista de Reportes</h6>
     
     <table class="table">
       <thead class="thead-dark">
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">Nombres</th>
-          <th scope="col">Apellidos</th>
-          <th scope="col">Puesto</th>
-          <th scope="col">Estado</th>
-          <th scope="col">Correo</th>
-          <th scope="col">Dirección</th>
-          <th scope="col">Municipio</th>
-          <th scope="col">Teléfono</th>
+          <th scope="col">ID Usuario</th>
+          <th scope="col">Tipo de Reporte</th>
+          <th scope="col">Fecha</th>
+          <th scope="col">Coordenas</th>
+          <th scope="col">Sensor</th>
+          <th scope="col">Detalle</th>
+       
         </tr>
       </thead>
       <tbody>
         <tr>
           <th scope="row">1</th>
           <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <td>Reporte de Inundaciones</td>
+          <td>01/01/2000</td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
+          <td>Reporte de Metereología</td>
+          <td>04/10/2005</td>
         </tr>
         <tr>
           <th scope="row">3</th>
           <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <td>Reporte de Ondas Meteorológicas</td>
+          <td>10/12/2010</td>
         </tr>
       </tbody>
     </table>
