@@ -1,4 +1,4 @@
-// import mapStyle from './map-style.js' archivo del style map
+import mapStyle from './inundacion-map.js' //archivo del style map
 const $map = document.querySelector('#map')
 const map = new window.google.maps.Map($map, {
   center: {
@@ -7,7 +7,7 @@ const map = new window.google.maps.Map($map, {
   },
   zoom: 7,
   
-  //styles: mapStyle, //para el estilo del mapa
+styles: mapStyle, //para el estilo del mapa
 })
 renderData()
 async function getData(){
@@ -16,18 +16,17 @@ async function getData(){
   return data
 }
 var nombre="Alerta"
-var descrip="Movimiento telurico"
-var numero="7.4"
-function renderInfo(nombre, descrip,numero){
+var descrip="Desborde"
+function renderInfo(nombre, descrip){
   return `
     <div>
       <p><strong>${nombre}</strong></p>
       <p>Descripcion:${descrip}</p>
-      <p>Magnitud:${numero}</p>
+      
     </div>
   `
 }
-
+//const icon = 'images/antena.png'
 const popup = new window.google.maps.InfoWindow()
 async function renderData(lt, ln){
   // const data = await getData()
@@ -39,7 +38,8 @@ async function renderData(lt, ln){
       lat:lt,
       lng: ln,
     },
-    map
+    map,
+   // icon,
   })
   marker.addListener('click', () =>{
     popup.setContent(renderInfo(nombre, descrip,numero))
@@ -56,8 +56,8 @@ function aleatorio(min, maxi)
 
   var x, y;
   var no_lavels=10;
-  for (var i = 0 ; i < 10; i ++){
-    x=aleatorio(13,16);
+  for (var i = 0 ; i < 35; i ++){
+    x=aleatorio(14,15);
     y= aleatorio(-92, -90)
     renderData(x,y)
     console.log(x,y)

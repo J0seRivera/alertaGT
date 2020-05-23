@@ -1,4 +1,4 @@
-// import mapStyle from './map-style.js' archivo del style map
+//import mapStyle from './deslizamiento.js' //archivo del style map
 const $map = document.querySelector('#map')
 const map = new window.google.maps.Map($map, {
   center: {
@@ -7,7 +7,7 @@ const map = new window.google.maps.Map($map, {
   },
   zoom: 7,
   
-  //styles: mapStyle, //para el estilo del mapa
+ // styles: mapStyle, //para el estilo del mapa
 })
 renderData()
 async function getData(){
@@ -27,7 +27,7 @@ function renderInfo(nombre, descrip,numero){
     </div>
   `
 }
-
+const icon = 'images/antena.png'
 const popup = new window.google.maps.InfoWindow()
 async function renderData(lt, ln){
   // const data = await getData()
@@ -39,7 +39,8 @@ async function renderData(lt, ln){
       lat:lt,
       lng: ln,
     },
-    map
+    map,
+    icon,
   })
   marker.addListener('click', () =>{
     popup.setContent(renderInfo(nombre, descrip,numero))
@@ -56,9 +57,9 @@ function aleatorio(min, maxi)
 
   var x, y;
   var no_lavels=10;
-  for (var i = 0 ; i < 10; i ++){
-    x=aleatorio(13,16);
-    y= aleatorio(-92, -90)
+  for (var i = 0 ; i < 100; i ++){
+    x=aleatorio(14,15.5);
+    y= aleatorio(-91.5, -90)
     renderData(x,y)
     console.log(x,y)
     

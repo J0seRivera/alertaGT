@@ -1,4 +1,4 @@
-// import mapStyle from './map-style.js' archivo del style map
+import mapStyle from './deslizamiento.js' //archivo del style map
 const $map = document.querySelector('#map')
 const map = new window.google.maps.Map($map, {
   center: {
@@ -7,7 +7,7 @@ const map = new window.google.maps.Map($map, {
   },
   zoom: 7,
   
-  //styles: mapStyle, //para el estilo del mapa
+  styles: mapStyle, //para el estilo del mapa
 })
 renderData()
 async function getData(){
@@ -27,7 +27,7 @@ function renderInfo(nombre, descrip,numero){
     </div>
   `
 }
-
+const icon = 'images/des.png'
 const popup = new window.google.maps.InfoWindow()
 async function renderData(lt, ln){
   // const data = await getData()
@@ -39,7 +39,8 @@ async function renderData(lt, ln){
       lat:lt,
       lng: ln,
     },
-    map
+    map,
+    icon,
   })
   marker.addListener('click', () =>{
     popup.setContent(renderInfo(nombre, descrip,numero))
