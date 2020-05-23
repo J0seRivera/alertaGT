@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+.map {
+  height: 558px;
+  position: relative;
+}
+
+.titulo-mapa{
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #1b1b2f;
+}
+
+.subtitulo{
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-align: center;
+  color: #1f4068;
+}
+
+.alerta-verde{
+  color: green;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.alerta-amarilla{
+  color: #f8b24f;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.alerta-naranja{
+  color: #ec823a;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.alerta-roja{
+  color: #d32626;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.descr{
+  font-size: .8em;
+}
