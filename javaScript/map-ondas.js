@@ -1,4 +1,4 @@
-//import mapStyle from './frente-frio.js' //archivo del style map
+import mapStyle from './frente-frio.js' //archivo del style map
 const $map = document.querySelector('#map')
 const map = new window.google.maps.Map($map, {
   center: {
@@ -7,7 +7,7 @@ const map = new window.google.maps.Map($map, {
   },
   zoom: 7,
   
-  //styles: mapStyle, //para el estilo del mapa
+styles: mapStyle, //para el estilo del mapa
 })
 renderData()
 async function getData(){

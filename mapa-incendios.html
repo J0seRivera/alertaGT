@@ -7,6 +7,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/offcanvas/">
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/mapstyle.css">
+  <link rel="stylesheet" href="styles/im-incend.css">
 </head>
 
 <body>
@@ -54,24 +55,14 @@
       </ul>
     </div>
   </nav>
- 
   <div class='container-fluid'>
     <div class='row'>
       <div class='col-md-4'>
-        <div class="titulo"><p class="titulo-mapa">Mapa de Alertas</p></div>
+        <div class="titulo"><p class="titulo-mapa">Mapa de Incendios</p></div>
         <div class="subtitulo"><p>Descripción</p></div>
         <div class="contenido">
-          <p class="alerta-verde">Alerta Verde</p>
-          <div class="descr"><p>Esta alerta significa vigilancia y la principal recomendación al momento de que se activa es continuar con las actividades normales.</p></div>
+            <img class="imin" id="myImg" src="https://conred.gob.gt/www/images/infografias/24-incendios_forestales_antes.jpg" alt="">
 
-          <p class="alerta-amarilla">Alerta Amarilla</p>
-          <div class="descr"><p>La alerta amarilla significa prevención. Una de las recomendaciones principales cuando se activa es prepararse para actuar al momento de atender las instrucciones y recomendaciones de las autoridades.</p></div>
-
-          <p class="alerta-naranja">Alerta Anaranjada</p>
-          <div class="descr"><p>Esta alerta significa peligro. Lo que se recomienda cuando se activa es que los ciudadanos se mantengan alerta. Es decir que observen cualquier signo de peligro, si es necesario se debe evacuar de las zonas de peligro y dirigirse a refugios provisionales, además de atender las instrucciones de las autoridades.</p></div>
-
-          <p class="alerta-roja">Alerta Roja</p>
-          <div class="descr"><p>La alerta roja significa emergencia. La recomendación que brinda la CONRED al momento de activarla es evacuar las zonas de peligro, permanecer en refugios provisionales y seguir las instrucciones emitidas por las autoridades.</p></div>
         </div>
       </div>
       <div class='col-md-8'>
@@ -80,12 +71,17 @@
     </div>
   </div>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>  
+    
 
-
-
-  
+  <script src="javaScript/im-incendios.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaCYTttKjLu0PQ2ER0rbxqx1JxAAirVtE"></script>
-  <script type="module" src="javaScript/map.js"></script>
+  <script type="module" src="javaScript/map-incendios.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="javaScript/jquery.slim.min.js"><\/script>')</script><script src="javaScript/bootstrap.bundle.js"></script>
   <script src="javaScript/offcanvas.js"></script>

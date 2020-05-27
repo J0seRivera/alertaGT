@@ -1,29 +1,53 @@
 body {
   margin: 0;
+  background-color: #1f212e;
+}
+p{
+  margin: 0;
+}
+
+.imin{
+  position: relative;
+  width:100%;
 }
 .map {
+  margin-top: 3%;
   height: 558px;
   position: relative;
 }
+.map-radio{
+  margin: 5px;
+  height: 558px;
+  position: relative;
+  
+}
 
 .titulo-mapa{
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
-  margin-top: .5em;
+  margin:10px 0px;
   font-weight: bold;
-  color: #1b1b2f;
+  color: hsl(0, 0%, 100%);
+}
+.titulo-mapa-radio{
+  font-size: 1.5em;
+  text-align: center;
+  margin:0px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
 }
 
 .subtitulo{
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bolder;
   text-align: center;
-  color: #1f4068;
+  color: #6696d1;
+  margin: 0cm;
 }
 
 .alerta-verde{
   color: green;
-  margin-top: 5px;
+  margin-top: 1px;
   margin-bottom: 5px;
 }
 .alerta-amarilla{
@@ -42,5 +66,7 @@ body {
   margin-bottom: 5px;
 }
 .descr{
-  font-size: .8em;
+  font-size: .9em;
+  color: hsl(228, 34%, 66%);
+  text-align: justify;
 }

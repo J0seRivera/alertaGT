@@ -1,13 +1,13 @@
-//import mapStyle from './frente-frio.js' //archivo del style map
+import mapStyle from './sequia.js' //archivo del style map
 const $map = document.querySelector('#map')
 const map = new window.google.maps.Map($map, {
   center: {
-    lat: 15.7270971,
-    lng: -90.1819147
+    lat: 15.9617803,
+    lng: -90.5762493
   },
   zoom: 7,
   
-  //styles: mapStyle, //para el estilo del mapa
+styles: mapStyle, //para el estilo del mapa
 })
 renderData()
 async function getData(){
