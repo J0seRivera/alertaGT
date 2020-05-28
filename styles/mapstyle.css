@@ -1,15 +1,26 @@
 body {
   margin: 0;
-  background-color: #1f212e;
+  background: linear-gradient(to right, #222831, #30475e);
 }
 p{
   margin: 0;
+}
+.imin{
+  margin: 10% 0% 10% 0%;
+}
+.minS{
+  height: 720px;
+}
+.apa{
+  text-align: center;
+  color: hsl(0, 0%, 100%);
 }
 
 .imin{
   position: relative;
   width:100%;
 }
+
 .map {
   margin-top: 3%;
   height: 558px;

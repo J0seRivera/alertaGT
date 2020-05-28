@@ -1,4 +1,4 @@
-//import mapStyle from './frente-frio.js' //archivo del style map
+import mapStyle from './map-te.js' //archivo del style map
 const $map = document.querySelector('#map')
 const map = new window.google.maps.Map($map, {
   center: {
@@ -7,7 +7,7 @@ const map = new window.google.maps.Map($map, {
   },
   zoom: 7,
   
-  //styles: mapStyle, //para el estilo del mapa
+styles: mapStyle, //para el estilo del mapa
 })
 renderData()
 async function getData(){
@@ -54,32 +54,12 @@ function aleatorio(min, maxi)
     return resultado;
   }
 
-
-  // renderData(x,y)
-
   var x, y;
-  // var no_lavels=10;
-  // for (var i = 0 ; i < 10; i ++){
-  //   x=aleatorio(13,16);
-  //   y= aleatorio(-92, -90)
-  //   renderData(x,y)
-  //   console.log(x,y)
-  // }
-
-  function dividirCadena(cadenaADividir,separador) {
-    var arrayDeCadenas = cadenaADividir.split(separador);
- 
-    for (var i=0; i < arrayDeCadenas.length; i++) {
-      //  document.write(arrayDeCadenas[i] + " / ");
-       console.log(arrayDeCadenas[i]);
-    }
-    x=parseFloat(arrayDeCadenas[0]);
-    y=parseFloat(arrayDeCadenas[1]);
-
-    renderData(x,y);
- }
- 
- var cadenaVerso = "15.7270971 -90.1819147";
- var espacio = " ";
-
- dividirCadena(cadenaVerso, espacio);
+  var no_lavels=10;
+  for (var i = 0 ; i < 10; i ++){
+    x=aleatorio(13,16);
+    y= aleatorio(-92, -90)
+    renderData(x,y)
+    console.log(x,y)
+    
+  }

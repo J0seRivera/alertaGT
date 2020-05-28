@@ -7,6 +7,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/offcanvas/">
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/mapstyle.css">
+  <link rel="stylesheet" href="styles/im-incen.css">
 </head>
 
 <body>
@@ -58,27 +59,37 @@
   <div class='container-fluid'>
     <div class='row'>
       <div class='col-md-4'>
-        <div class="titulo"><p class="titulo-mapa">Mapa de Ondas Meteorológicas</p></div>
+        <div class="titulo"><p class="titulo-mapa">Mapa de Fenómenos Meteorológicos</p></div>
         <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Frente Frío</a>
+          <a class="navbar-brand" href="#">Huracanes</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         
           <div class="collapse navbar-collapse" id="navbarsExample01">
             <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="mapa-fenomenos.html">Tormentas Electricas<span class="sr-only">(current)</span></a>
+              </li>
               <li class="nav-item active">
-                <a class="nav-link" href="mapa-ondas.html">Frente Frío <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="mapa-ondas-sequia.html">Huracanes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="mapa-ondas-sequia.html">Sequía</a>
+                <a class="nav-link" href="#">Tormenta Tropical</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="mapa-ondas-frio.html">Helada</a>
+                <a class="nav-link" href="#">Depresión Tropical</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tornados </a>
               </li>
             </ul>
           </div>
         </nav>
+        <div class="contenido">
+          <img class="imin" id="myImg" src="https://conred.gob.gt/site/images/infografias/28-Huracanes.jpg?1.0.2" alt="">
+          <img class="imin" id="myImg2" src="https://conred.gob.gt/site/images/infografias/29-Huracanes.jpg?1.0.2" alt="">
+      </div>
       </div>
       <div class='col-md-8'>
         <div id="map" class="map"></div>
@@ -86,12 +97,16 @@
     </div>
   </div>
 
-
-
-
-  
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>  
+ 
+  <script src="javaScript/im-incendios.js"></script>
+  <script src="javaScript/im-incendios2.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaCYTttKjLu0PQ2ER0rbxqx1JxAAirVtE"></script>
-  <script type="module" src="javaScript/map-ondas.js"></script>
+  <script type="module" src="javaScript/map-TormE.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="javaScript/jquery.slim.min.js"><\/script>')</script><script src="javaScript/bootstrap.bundle.js"></script>
   <script src="javaScript/offcanvas.js"></script>
