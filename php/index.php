@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mapa</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/offcanvas/">
-  <link rel="stylesheet" href="styles/bootstrap.css">
-  <link rel="stylesheet" href="styles/mapstyle.css">
-  <!-- <link rel="stylesheet" href="styles/mstyle.css"> -->
+  <link rel="stylesheet" href="../styles/bootstrap.css">
+  <link rel="stylesheet" href="../styles/mapstyle.css">
+	<!-- <link rel="stylesheet" href="styles/mstyle.css"> -->
+	
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             Mapas
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item active" href="mapa-alertas.html">Mapa de Alertas</a>
+            <a class="dropdown-item active" id="caja_busqueda" href="mapa-alertas.html" name="caja_busqueda">Mapa de Alertas</a>
             <a class="dropdown-item" href="mapa-reacion.html">Mapa de Reacción Inmediata</a>
             <a class="dropdown-item" href="mapa-radio.html">Mapa de de Radio Vigilancia</a>
             <a class="dropdown-item" href="mapa-inundacion.html">Mapa de Amenaza por Inundación</a>
@@ -71,7 +72,8 @@
           <div class="descr"><p>Esta alerta significa peligro. Lo que se recomienda cuando se activa es que los ciudadanos se mantengan alerta. Es decir que observen cualquier signo de peligro, si es necesario se debe evacuar de las zonas de peligro y dirigirse a refugios provisionales, además de atender las instrucciones de las autoridades.</p></div>
 
           <p class="alerta-roja">Alerta Roja</p>
-          <div class="descr"><p>La alerta roja significa emergencia. La recomendación que brinda la CONRED al momento de activarla es evacuar las zonas de peligro, permanecer en refugios provisionales y seguir las instrucciones emitidas por las autoridades.</p></div>
+					<div class="descr"><p>La alerta roja significa emergencia. La recomendación que brinda la CONRED al momento de activarla es evacuar las zonas de peligro, permanecer en refugios provisionales y seguir las instrucciones emitidas por las autoridades.</p></div>
+					<div name="datos" id="datos"></div>
         </div>
       </div>
       <div class='col-md-8'>
@@ -82,13 +84,13 @@
 
 
 
-
-  <script src="login_crud/jquery/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+  <!-- <script src="../login_crud/jquery/jquery-3.3.1.min.js"></script> -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaCYTttKjLu0PQ2ER0rbxqx1JxAAirVtE"></script>
-  <script type="module" src="javaScript/map.js">
-  </script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="javaScript/jquery.slim.min.js"><\/script>')</script><script src="javaScript/bootstrap.bundle.js"></script>
-  <script src="javaScript/offcanvas.js"></script>
+  <script type="module" src="../javaScript/map.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../javaScript/jquery.slim.min.js"><\/script>')</script><script src="../javaScript/bootstrap.bundle.js"></script>
+  <script src="../javaScript/offcanvas.js"></script>
 </body>
 </html>

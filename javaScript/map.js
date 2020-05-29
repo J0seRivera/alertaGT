@@ -1,3 +1,26 @@
+/*
+$(buscar_datos());
+
+function buscar_datos(consulta){
+	$.ajax({
+		url: 'buscar.php' ,
+		type: 'POST' ,
+		dataType: 'html',
+		data: {consulta: consulta},
+	})
+	.done(function(respuesta){
+		console.log(respuesta);
+    //console.log("coneccion exitosa");
+    $("#datos").html(respuesta);
+	})
+	.fail(function(){
+		console.log("error");
+	});
+}
+
+buscar_datos();
+// window.location.href = "./php/consultaMap.php";
+*/
 //import mapStyle from './frente-frio.js' //archivo del style map
 const $map = document.querySelector('#map')
 const map = new window.google.maps.Map($map, {
@@ -9,12 +32,8 @@ const map = new window.google.maps.Map($map, {
   
   //styles: mapStyle, //para el estilo del mapa
 })
-renderData()
-async function getData(){
-  const response = await fetch('https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/latest')
-  const data = await response.json()
-  return data
-}
+//renderData();
+
 var nombre="Alerta"
 var descrip="Movimiento telurico"
 var numero="7.4"
@@ -30,10 +49,7 @@ function renderInfo(nombre, descrip,numero){
 
 const popup = new window.google.maps.InfoWindow()
 async function renderData(lt, ln){
-  // const data = await getData()
-  // console.log(data)
-  //12-17.5
-  //-92 -88
+ 
   const marker = new window.google.maps.Marker({
     position:{
       lat:lt,
@@ -47,38 +63,22 @@ async function renderData(lt, ln){
   })
 }
 
-function aleatorio(min, maxi)
-  {
-    var resultado;
-    resultado = (Math.random() * (maxi - min + 1 )) + min;
-    return resultado;
-  }
-
-
-  // renderData(x,y)
 
   var x, y;
-  // var no_lavels=10;
-  // for (var i = 0 ; i < 10; i ++){
-  //   x=aleatorio(13,16);
-  //   y= aleatorio(-92, -90)
-  //   renderData(x,y)
-  //   console.log(x,y)
-  // }
-
+ 
   function dividirCadena(cadenaADividir,separador) {
     var arrayDeCadenas = cadenaADividir.split(separador);
  
-    for (var i=0; i < arrayDeCadenas.length; i++) {
-      //  document.write(arrayDeCadenas[i] + " / ");
-       console.log(arrayDeCadenas[i]);
-    }
-    x=parseFloat(arrayDeCadenas[0]);
-    y=parseFloat(arrayDeCadenas[1]);
+    // for (var i=0; i < arrayDeCadenas.length; i++) {
+    //   //  document.write(arrayDeCadenas[i] + " / ");
+    //    console.log(arrayDeCadenas[i]);
+    // }
+     x=parseFloat(arrayDeCadenas[0]);
+     y=parseFloat(arrayDeCadenas[1]);
 
     renderData(x,y);
  }
- 
+
  var cadenaVerso = "15.7270971 -90.1819147";
  var espacio = " ";
 

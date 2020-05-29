@@ -56,11 +56,10 @@ function aleatorio(min, maxi)
   }
 
   var x, y;
-  var no_lavels=10;
-  for (var i = 0 ; i < 10; i ++){
-    x=aleatorio(13,16);
-    y= aleatorio(-92, -90)
-    renderData(x,y)
-    console.log(x,y)
-    
+  
+  for (var i = 0 ; i < 5; i ++){
+  x=aleatorio(14,15.5);
+  y= aleatorio(-91.5, -90)
+  renderData(x,y)
+  console.log(x,y)
   }

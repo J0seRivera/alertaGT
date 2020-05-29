@@ -7,6 +7,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/offcanvas/">
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/mapstyle.css">
+  <link rel="stylesheet" href="styles/im-deslizamientos.css">
 </head>
 
 <body>
@@ -79,13 +80,23 @@
             </ul>
           </div>
         </nav>
+        <div class="contenido">
+          <img class="imin" id="myImg" src="https://conred.gob.gt/site/images/infografias/03-inf_bajas_temperaturas.jpg?1.0.2" alt="Recomendaciones por Lluvia">
+      </div>
       </div>
       <div class='col-md-8'>
         <div id="map" class="map"></div>
       </div>
     </div>
   </div>
-
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>  
+      
+  
+  <script src="javaScript/im-incendios.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaCYTttKjLu0PQ2ER0rbxqx1JxAAirVtE"></script>
   <script type="module" src="javaScript/map-sequia-helada.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
