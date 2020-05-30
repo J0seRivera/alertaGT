@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if($_SESSION["s_usuario"] === null){
+    header("Location: login_crud/index.php");
+}
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -43,7 +51,8 @@
         <a class="nav-link" href="#">Mapas</a>
         <a class="nav-link" href="#">Boletines</a>
         <a class="nav-link" href="#">Alertas</a>
-        <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal>Salir</a>
+        
+        <a class="btn btn-primary" href="login_crud/bd/logout.php">Salir</a>
       </nav>
     </div>
   </header>
