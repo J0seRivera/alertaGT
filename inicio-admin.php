@@ -47,11 +47,14 @@ if($_SESSION["s_usuario"] === null){
         <a class="nav-link active" href="#">Inicio</a>
         <a class="nav-link" href="./login_crud/dashboard/index.php">Usuarios</a>
         <a class="nav-link" href="lista_reportes.html">Reportes</a>
-        <a class="nav-link" href="#">Informes</a>
+
         <a class="nav-link" href="#">Mapas</a>
-        <a class="nav-link" href="#">Boletines</a>
         <a class="nav-link" href="#">Alertas</a>
-        
+        <a class="nav-link" href="crud_reporte.php">Reportes</a>
+        <a class="nav-link" href="crud_informe.php">Informes</a>
+        <a class="nav-link " href="crud_boletin.php">Boletines</a>
+        <a class="nav-link" href="vitacora.php">Vitacora</a>
+
         <a class="nav-link" href="login_crud/bd/logout.php">Salir</a>
       </nav>
     </div>
