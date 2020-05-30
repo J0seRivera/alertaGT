@@ -22,16 +22,16 @@ $('#formLogin').submit(function(e){
                        title:'Usuario y/o password incorrecta',
                    });
                }else{
-                   Swal.fire({
-                       type:'success',
-                       title:'¡Conexión exitosa!',
-                       confirmButtonColor:'#3085d6',
-                       confirmButtonText:'Ingresar'
-                   }).then((result) => {
-                       if(result.value){
-                           //window.location.href = "vistas/pag_inicio.php";
-                           window.location.href = "dashboard/index.php";
-                       }
+                Swal.fire({
+                    type:'success',
+                    title:'¡Conexión exitosa!',
+                    showConfirmButton: false,
+                    //Oculto el boton de OK
+                    timer: 1500,
+                //Seteo un tiempo en pantalla antes de cerrar el alert
+               }).then(function () {
+                 window.location.href = "dashboard/index.php";
+                //Redirecciono al Index
                    })
                    
                }

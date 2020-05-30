@@ -19,6 +19,7 @@ if($_SESSION["s_usuario"] === null){
   <meta name="author" content="">
 
   <title>SB Admin 2 - Dashboard</title>
+  <link rel="shortcut icon" href="https://conred.gob.gt/site/images/logo.png" />
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -53,11 +54,18 @@ if($_SESSION["s_usuario"] === null){
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
+      <!-- USUARIOS -->
       <li class="nav-item active">
         <a class="nav-link" href="index.php">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Gestionar Usuarios</span></a>
+      </li>
+
+      <!-- CUENTAS -->
+      <li class="nav-item active">
+        <a class="nav-link" href="cuentas.php">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Gestionar Cuentas</span></a>
       </li>
 
       <!-- Divider -->
@@ -65,19 +73,19 @@ if($_SESSION["s_usuario"] === null){
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Interface
+        MAS OPCIONES
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
+          <span>GESTIONAR</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.php">Buttons</a>
+            <h6 class="collapse-header">Opciones de Gestión:</h6>
+            <a class="collapse-item" href="buttons.php">Gestionar Cuentas</a>
             <a class="collapse-item" href="cards.php">Cards</a>
           </div>
         </div>
