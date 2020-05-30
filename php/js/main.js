@@ -1,4 +1,3 @@
-
 $(buscar_datos());
 
 function buscar_datos(consulta){
@@ -9,12 +8,18 @@ function buscar_datos(consulta){
 		data: {consulta: consulta},
 	})
 	.done(function(respuesta){
-		console.log(respuesta);
-		console.log("coneccion exitosa");
+		$("#datos").html(respuesta);
 	})
 	.fail(function(){
 		console.log("error");
 	});
 }
 
-buscar_datos();
+$(document).on('keyup','#caja_busqueda', function(){
+	var valor = $(this).val();
+	if (valor != "") {
+		buscar_datos(valor);
+	}else{
+		buscar_datos();
+	}
+});
