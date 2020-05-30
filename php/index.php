@@ -50,9 +50,7 @@
             <li class="nav-item ">
               <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Alertas</a>
-            </li>
+            
             <li class="nav-item active">
               <a class="nav-link" href="../boletines.html">Boletines</a>
             </li>
