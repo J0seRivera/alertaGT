@@ -70,15 +70,15 @@ $(document).on("click", ".btnEditar", function(){
 //botón BORRAR
 $(document).on("click", ".btnBorrar", function(){    
     fila = $(this);
-    id = parseInt($(this).closest("tr").find('td:eq(0)').text());
+    id_usuario = parseInt($(this).closest("tr").find('td:eq(0)').text());
     opcion = 3 //borrar
-    var respuesta = confirm("¿Está seguro de eliminar el registro: "+id+"?");
+    var respuesta = confirm("¿Está seguro de eliminar el registro: "+id_usuario+"?");
     if(respuesta){
         $.ajax({
             url: "bd/crud.php",
             type: "POST",
             dataType: "json",
-            data: {opcion:opcion, id:id},
+            data: {opcion:opcion, id_usuario:id_usuario},
             success: function(){
                 tablaPersonas.row(fila.parents('tr')).remove().draw();
             }
