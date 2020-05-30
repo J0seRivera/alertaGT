@@ -30,7 +30,7 @@ $('#formLogin').submit(function(e){
                     timer: 1500,
                 //Seteo un tiempo en pantalla antes de cerrar el alert
                }).then(function () {
-                 window.location.href = "dashboard/index.php";
+                 window.location.href = "../inicio-admin.php";
                 //Redirecciono al Index
                    })
                    

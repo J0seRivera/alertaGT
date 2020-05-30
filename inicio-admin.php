@@ -52,7 +52,7 @@ if($_SESSION["s_usuario"] === null){
         <a class="nav-link" href="#">Boletines</a>
         <a class="nav-link" href="#">Alertas</a>
         
-        <a class="btn btn-primary" href="login_crud/bd/logout.php">Salir</a>
+        <a class="nav-link" href="login_crud/bd/logout.php">Salir</a>
       </nav>
     </div>
   </header>

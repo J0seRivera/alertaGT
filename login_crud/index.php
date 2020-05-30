@@ -20,7 +20,7 @@
       <div class="container-login">
         <div class="wrap-login">
             <form class="login-form validate-form" id="formLogin" action="" method="post">
-                <span class="login-form-title">LOGIN ALERTAGT</span>
+                <span class="login-form-title"><a href="../index.html">LOGIN ALERTAGT</a></span>
                 
                 <div class="wrap-input100" data-validate = "Usuario incorrecto">
                     <input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario">
