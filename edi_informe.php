@@ -8,7 +8,7 @@
     <meta name="generator" content="Jekyll v4.0.1">
     <title>Editar Informe</title>
     <link rel="stylesheet" href="styles/login.css">
-
+    <link rel="shortcut icon" href="https://conred.gob.gt/site/images/logo.png" />
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
 
     <!-- Bootstrap core CSS -->
@@ -38,17 +38,17 @@
     
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="inicio-admin.html">AlertaGT</a>
+        <a class="navbar-brand" href="index.html">AlertaGT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="inicio-admin.html">Inicio </a>
+              <a class="nav-link" href="inicio-admin.php">Inicio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gestión de Usuarios <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="login_crud/index.php">Usuarios <span class="sr-only">(current)</span></a>
             </li>
              <li class="nav-item ">
              <a class="nav-link" href="#">Reportes</a>

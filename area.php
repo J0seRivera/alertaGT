@@ -17,7 +17,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
     <title>Editar Tablas</title>
-
+    <link rel="shortcut icon" href="https://conred.gob.gt/site/images/logo.png" />
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/offcanvas/">
     <!-- Bootstrap core CSS -->
     <link href="styles/bootstrap.css" rel="stylesheet">
@@ -79,7 +79,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
   </head>
   <body class="cuerpo">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand " href="#">AlertaGT</a>
+    <a class="navbar-brand " href="index.html">AlertaGT</a>
     <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -87,7 +87,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="inicio-admin.html">Inicio </a>
+        <a class="nav-link" href="inicio-admin.php">Inicio </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Gestión de Usuarios<span class="sr-only">(current)</span></a>
@@ -113,7 +113,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
             <a class="dropdown-item" href="roll.php">GT_ROLL_CUENTA</a>
             <a class="dropdown-item" href="estado_cuenta.php">ESTADO_CUENTA</a>
             <a class="dropdown-item" href="puesto.php">GT_PUESTO</a>
-            <a class="dropdown-item" href="area.php">GT_AREA</a>
+            <a class="dropdown-item active" href="area.php">GT_AREA</a>
             <a class="dropdown-item" href="evento.php">GT_EVENTO</a>
             <a class="dropdown-item" href="escala_evento.php">GT_ESCALA_EVENTO</a>
             <a class="dropdown-item" href="cateogira_evento.php">CATEGORIA_EVENTO</a>

@@ -58,6 +58,7 @@ body {
 .conred-logo{
   height: 250px;
   width: 250px;
+  margin-top: 10%;
   padding-bottom: 1em;
 }
 .nav-masthead .nav-link {
