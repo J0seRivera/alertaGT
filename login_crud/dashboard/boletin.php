@@ -10,7 +10,7 @@
 <div class = 'container'>
     <div class = 'row'>
         <div class = 'col-lg-12'>
-            <button id = 'btnNuevoCuenta' type = 'button' class = 'btn btn-danger' data-toggle = 'modal'>Registrar Nueva Cuenta</button>
+            <button id = 'btnNuevoBoletin' type = 'button' class = 'btn btn-danger' data-toggle = 'modal'>Nuevo Boletín informativo</button>
         </div>
     </div>
     </div>
@@ -19,43 +19,37 @@
 <div class = 'row'>
 <div class = 'col-lg-12'>
 <div class = 'table-responsive'>
-<table id = 'tablaCuentas' class = 'table table-striped table-bordered table-condensed' style = 'width:100%; font-size:10px;'>
+<table id = 'tablaBoletin' class = 'table table-striped table-bordered table-condensed' style = 'width:100%; font-size:10px;'>
     <thead class = 'text-center'>
     <tr>
-            <th>id</th>
-            <th>id usr</th>
-            <th>nombre</th>
-            <th>alias</th>
-            <th>clave</th>
-            <th>idestado</th>
-            <th>estado</th>
-            <th>idr</th>
-            <th>roll</th>
+            <th>id boletin</th>
+            <th>nombre boletin</th>
+            <th>id informe</th>
+            <th>fecha</th>
+            <th>id usuario</th>
+            <th>usuario</th>
             <th>Action</th>
           </tr>
         </thead>
         <tbody>
 
           <?php
-          $query = "SELECT id_cuenta, gt_cuenta_usuario.id_usuario idusr, nombre, alias, clave, gt_cuenta_usuario.id_estado idest, nombre_estado, gt_cuenta_usuario.id_roll idr, nombre_roll FROM gt_cuenta_usuario join gt_usuario on(gt_cuenta_usuario.id_usuario=gt_usuario.id_usuario) join gt_estado_cuenta on(gt_cuenta_usuario.id_estado=gt_estado_cuenta.id_estado) join gt_roll_cuenta on(gt_cuenta_usuario.id_roll=gt_roll_cuenta.id_roll);";
+          $query = "SELECT id_boletin, nombre_boletin, id_informe, fecha, gt_boletin.id_usuario id_usuario, nombre from gt_boletin join gt_usuario on(gt_boletin.id_usuario=gt_usuario.id_usuario);";
           $result_tasks = mysqli_query($conn, $query);    
 
           while($row = mysqli_fetch_assoc($result_tasks)) { ?>
           <tr>
-            <td><?php echo $row['id_cuenta']; ?></td>
-            <td><?php echo $row['idusr']; ?></td>
-            <td><?php echo $row['nombre']; ?></td>
-            <td><?php echo $row['alias']; ?></td>
-            <td><?php echo $row['clave']; ?></td>
-            <td><?php echo $row['idest']; ?></td>
-            <td><?php echo $row['nombre_estado']; ?></td>
-            <td><?php echo $row['idr']; ?></td>
-            <td><?php echo $row['nombre_roll']; ?></td>
+            <td><?php echo $row['id_boletin']; ?></td>
+            <td><?php echo $row['nombre_boletin']; ?></td>
+            <td><?php echo $row['id_informe']; ?></td>
+            <td><?php echo $row['fecha']; ?></td>
+            <td><?php echo $row['id_usuario']; ?></td>
+            <td><?php echo $row['usuario']; ?></td>
             <td>
-              <a href="edit_cuenta.php?id=<?php echo $row['id_cuenta']?>" class="btn btn-secondary">
+              <a href="edit_cuenta.php?id=<?php echo $row['id_boletin']?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
               </a>
-              <a href="delete_cuenta.php?id=<?php echo $row['id_cuenta']?>" class="btn btn-danger">
+              <a href="delete_cuenta.php?id=<?php echo $row['id_boletin']?>" class="btn btn-danger">
                 <i class="far fa-trash-alt"></i>
               </a>
             </td>
@@ -69,7 +63,7 @@
 </div>
 
 <!--Modal para CRUD-->
-<div class = 'modal fade' id = 'modalCRUD1' tabindex = '-1' role = 'dialog' aria-labelledby = 'exampleModalLabel' aria-hidden = 'true'>
+<div class = 'modal fade' id = 'modalCRUD4' tabindex = '-1' role = 'dialog' aria-labelledby = 'exampleModalLabel' aria-hidden = 'true'>
 <div class = 'modal-dialog' role = 'document'>
 <div class = 'modal-content'>
 <div class = 'modal-header'>
@@ -78,7 +72,7 @@
 </span>
 </button>
 </div>
-<form action="save_cuenta.php" method="POST">
+<form action="boletin_save.php" method="POST">
 <div class = 'modal-body'>
 
     <?php if (isset($_SESSION['message'])) { ?>
@@ -92,7 +86,7 @@
 
       <!-- ADD TASK FORM -->
     
-            <label class = 'col-form-label'>NUEVA CUENTA</label>
+            <label class = 'col-form-label'>NUEVO BOLETIN</label>
        
 
           <div class="form-group">
@@ -195,7 +189,7 @@
           </div>
 
 
-          <input type="submit" name="btnsave_cuenta" class="btn btn-success btn-block" value="REGISTRAR CUENTA">
+          <input type="submit" name="btnsave_Boletin" class="btn btn-success btn-block" value="REGISTRAR BOLETIN">
         
 
 

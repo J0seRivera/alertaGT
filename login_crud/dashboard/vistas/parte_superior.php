@@ -84,9 +84,10 @@ if($_SESSION["s_usuario"] === null){
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Opciones de Gestión:</h6>
-            <a class="collapse-item" href="buttons.php">Gestionar Cuentas</a>
-            <a class="collapse-item" href="cards.php">Cards</a>
+          <h6 class="collapse-header">Opciones de Gestión:</h6>
+            <a class="collapse-item" href="reportes.php">REPORTES</a>
+            <a class="collapse-item" href="informe.php">INFORMES</a>
+            <a class="collapse-item" href="boletin.php">BOLETINES</a>
           </div>
         </div>
       </li>

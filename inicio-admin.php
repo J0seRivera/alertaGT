@@ -81,11 +81,9 @@ if($_SESSION["s_usuario"] === null){
           <a class="dropdown-item" href="mapa-epidemia.html">Mapa de Epidemia</a>
         </div>
       </li>
+      
       <li class="nav-item">
-      <a class="nav-link" href="#">Alertas</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link" href="crud_reporte.php">Reportes</a>
+      <a class="nav-link" href="login_crud/dashboard/reportes.php">Reportes</a>
         
       </li>
       <li class="nav-item">
@@ -93,7 +91,7 @@ if($_SESSION["s_usuario"] === null){
         
       </li>
       <li class="nav-item">
-      <a class="nav-link " href="crud_boletin.php">Boletines</a>
+      <a class="nav-link " href="login_crud/dashboard/boletin.php">Boletines</a>
         
       </li>
       <li class="nav-item">
