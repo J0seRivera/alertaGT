@@ -1,0 +1,45 @@
+.lg{
+  margin-top: 5%;
+}
+
+.tinforme{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #00263b;
+  margin: 3% 3% 0% 3%;
+  text-align: justify;
+}
+.tfecha{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #00263b;
+    margin: 0% 0% 3% 3%;
+    text-align: justify;
+
+}
+
+.nboletin{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #00263b;
+  margin: 3% 3% 3% 3%;
+  text-align: justify;
+}
+
+
+.desboletin{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #00263b;
+  margin: 3% 3% 3% 3%;
+  text-align: justify;
+}
+
+.talerta{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #00263b;
+  margin: 3% 3% 3% 3%;
+  text-align: justify;
+}
